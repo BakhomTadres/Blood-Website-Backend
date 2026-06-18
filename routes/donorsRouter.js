@@ -9,6 +9,6 @@ import {
 import { protectAdmin } from "../middlewares/protectAdmin.js";
 export const donorsRouter = express.Router();
 donorsRouter.post("/add", verifyToken, addDonor);
-donorsRouter.get("/", verifyToken, getDonors);
+donorsRouter.get("/", getDonors);
 donorsRouter.delete("/:id", verifyToken, protectAdmin, deleteDonor);
 donorsRouter.patch("/:id", verifyToken, protectAdmin, updateDonor);
