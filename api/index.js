@@ -20,7 +20,7 @@ const connectDB = async () => {
 };
 
 app.use(cors({
-  origin: "https://blood-website-backend.vercel.app",
+  origin: "https://nabdel3taa.vercel.app",
   credentials: true
 }));
 app.use(express.json());
