@@ -19,7 +19,10 @@ const connectDB = async () => {
   console.log("Mongo DB connected");
 };
 
-app.use(cors());
+app.use(cors({
+  origin: "https://blood-website-backend.vercel.app",
+  credentials: true
+}));
 app.use(express.json());
 
 
